@@ -11,10 +11,9 @@ const currentBuildVersion = import.meta.env.VITE_APP_VERSION;
     <a href="https://www.linkedin.com/in/lucaforzutti/" rel="noopener noreferrer" target="_blank"
       ><img src="@/assets/icons8-linkedin.svg" alt="LinkedIn Icon"
     /></a>
-    <a href="https://github.com/darkart3k/blood-pressure-track" rel="noopener noreferrer" target="_blank">
+    <a href="https://github.com/DarkArtek/bp-tracker" rel="noopener noreferrer" target="_blank">
       <img class="linkedin-logo" v-if="!store.isDarkModeActive" src="@/assets/github-mark.svg" alt="Github Icon" />
       <img class="linkedin-logo" v-else src="@/assets/github-mark-white.svg" alt="Github Icon" />
-      <p>Version {{ currentBuildVersion }}</p>
     </a>
   </section>
 </template>
