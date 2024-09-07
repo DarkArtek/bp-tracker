@@ -18,7 +18,7 @@ const toastStore = useToastStore();
 const { currentToast } = storeToRefs(toastStore);
 const toast = useToast();
 
-function showToast(message: ToastMessageOptions){
+function showToast(message: ToastMessageOptions) {
   toast.add(message);
 }
 
@@ -60,7 +60,8 @@ watch(currentToast, (newValue, _) => {
   padding-top: 1rem;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin-top: 1rem;
 }

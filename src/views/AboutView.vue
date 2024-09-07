@@ -28,8 +28,8 @@ const { t } = useI18n();
       <p>
         {{ t("aboutAndHelp.dataPrivacy")
         }}<a href="https://github.com/darkart3k/blood-pressure-tracker" rel="noopener noreferrer" target="_blank"
-      >Github.</a
-      >
+          >Github.</a
+        >
       </p>
     </Panel>
 
@@ -57,14 +57,16 @@ const { t } = useI18n();
       <p>
         {{ t("aboutAndHelp.feedback") }}
         <a href="https://github.com/darkart3k/blood-pressure-tracker/issues" rel="noopener noreferrer" target="_blank"
-        >Github Issue.</a
+          >Github Issue.</a
         >
       </p>
     </Panel>
     <Panel :header="t('aboutAndHelp.openSauceTitle')">
       <p>
         {{ t("aboutAndHelp.openSauce1") }}
-        <a href="https://github.com/darkart3k/blood-pressure-tracker" rel="noopener noreferrer" target="_blank">Github.</a>
+        <a href="https://github.com/darkart3k/blood-pressure-tracker" rel="noopener noreferrer" target="_blank"
+          >Github.</a
+        >
         {{ t("aboutAndHelp.openSauce2") }}
       </p>
     </Panel>

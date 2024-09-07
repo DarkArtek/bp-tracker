@@ -2,8 +2,8 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
-import "./assets/main.css"
-import App from "./App.vue"
+import "./assets/main.css";
+import App from "./App.vue";
 import router from "./router";
 import DataTable from "primevue/datatable";
 import Column from "primevue/column";
@@ -23,14 +23,15 @@ const app = createApp(App);
 app.directive("focustrap", FocusTrap);
 app.directive("tooltip", Tooltip);
 
-app.use(createPinia())
+app.use(createPinia());
 
 const appSettingsStore = useAppSettingsStore();
 
 const i18n = createI18n({
-  legacy: false, fallbackLocale: "it",
+  legacy: false,
+  fallbackLocale: "it",
   locale: appSettingsStore.locale || getInitLocale(),
-  messages: { en: en, it:it }
+  messages: { en: en, it: it },
 });
 
 app.use(i18n);
@@ -59,7 +60,7 @@ const customNoir = definePreset(Aura, {
           color: "{zinc.700}",
           inverseColor: "#FFFFFF",
           hoverColor: "{zinc.600}",
-          activeColor: "{zinc.500}"
+          activeColor: "{zinc.500}",
         },
         highlight: {
           background: "{zinc.800}",
@@ -90,7 +91,7 @@ app.use(PrimeVue, {
   theme: {
     preset: customNoir,
     options: {
-      darkModeSelector: ".my-app-dark"
+      darkModeSelector: ".my-app-dark",
     },
   },
 });
@@ -99,4 +100,3 @@ app.component("DataTable", DataTable);
 app.component("Column", Column);
 
 app.mount("#app");
-

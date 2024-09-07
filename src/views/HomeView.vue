@@ -3,9 +3,7 @@ import MeasurementList from "@/components/MeasurementList.vue";
 </script>
 
 <template>
-<MeasurementList />
+  <MeasurementList />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

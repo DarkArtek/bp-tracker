@@ -92,7 +92,7 @@ const setChartData = () => {
         tension: 0.4,
       },
       {
-        label: t("measurement.heartRate "),
+        label: t("measurement.heartRate"),
         data: preparedData.map((m) => {
           return {
             x: m.timestampIso8601,

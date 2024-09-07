@@ -30,8 +30,8 @@ export function useColorScheme() {
 
   function toggleColorScheme() {
     appSettingsStore.isDarkModeOverwrittenByUser = true;
-    appSettingsStore.isDarkModeActive = !appSettingsStore.isDarkModeActive
+    appSettingsStore.isDarkModeActive = !appSettingsStore.isDarkModeActive;
   }
 
-  return { initColorScheme, toggleColorScheme};
+  return { initColorScheme, toggleColorScheme };
 }

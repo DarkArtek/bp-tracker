@@ -3,9 +3,7 @@ import ChartComponent from "@/components/ChartComponent.vue";
 </script>
 
 <template>
-<ChartComponent />
+  <ChartComponent />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

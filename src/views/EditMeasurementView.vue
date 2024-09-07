@@ -7,9 +7,7 @@ defineProps<{
 </script>
 
 <template>
-<MeasurementForm :id="id" />
+  <MeasurementForm :id="id" />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

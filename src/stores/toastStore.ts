@@ -4,7 +4,7 @@ import { ref } from "vue";
 import type { ToastMessageOptions } from "primevue/toast";
 
 export const useToastStore = defineStore("toasts", () => {
-    const currentToast: Ref<ToastMessageOptions | null> = ref(null);
+  const currentToast: Ref<ToastMessageOptions | null> = ref(null);
 
-    return { currentToast };
+  return { currentToast };
 });

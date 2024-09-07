@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/HomeView.vue"
+import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import NewMeasurementView from "@/views/AddMeasurementView.vue";
 import EditMeasurementView from "@/views/EditMeasurementView.vue";
@@ -11,27 +11,27 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView
+      component: HomeView,
     },
     {
       path: "/about",
       name: "about",
-      component: AboutView
+      component: AboutView,
     },
     {
       path: "/new",
       name: "new",
-      component: NewMeasurementView
+      component: NewMeasurementView,
     },
     {
       path: "/edit/:id",
       name: "edit",
-      component: EditMeasurementView
+      component: EditMeasurementView,
     },
     {
       path: "/chart",
       name: "chart",
-      component: ChartView
+      component: ChartView,
     },
   ],
 });

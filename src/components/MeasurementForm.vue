@@ -15,7 +15,6 @@ import { useToastStore } from "@/stores/toastStore";
 import ConfirmDialog from "primevue/confirmdialog";
 import { useConfirm } from "primevue/useconfirm";
 
-
 const measurementStore = useMeasurementsStore();
 const router = useRouter();
 const { t } = useI18n();

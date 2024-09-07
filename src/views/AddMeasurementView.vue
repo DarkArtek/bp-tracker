@@ -3,9 +3,7 @@ import MeasurementForm from "@/components/MeasurementForm.vue";
 </script>
 
 <template>
-<MeasurementForm />
+  <MeasurementForm />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

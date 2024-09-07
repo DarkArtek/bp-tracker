@@ -7,15 +7,15 @@ import { storeToRefs } from "pinia";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
-const {t} = useI18n();
+const { t } = useI18n();
 
 const appSettingsStore = useAppSettingsStore();
 
 const { hasUserAcceptedConsentModal } = storeToRefs(appSettingsStore);
 
 function handleConsentDenied() {
-  window.location.href = "https://duckduckgo.com"
-  useRouter().push({ name: "home"})
+  window.location.href = "https://duckduckgo.com";
+  useRouter().push({ name: "home" });
 }
 
 function handleConsentGiven() {
@@ -28,7 +28,7 @@ function updateConsentState() {
   const currentBuildVersion = import.meta.env.VITE_APP_VERSION;
   const versionHasChanged = currentBuildVersion != appSettingsStore.versionNumberWhenConsented;
 
-  if ( hasUserAcceptedConsentModal && versionHasChanged ) {
+  if (hasUserAcceptedConsentModal && versionHasChanged) {
     hasUserAcceptedConsentModal.value = false;
   }
 }
@@ -39,13 +39,13 @@ const shouldShowConsentModal = ref(!hasUserAcceptedConsentModal.value);
 </script>
 <template>
   <Dialog
-    v-model:visible = "shouldShowConsentModal"
+    v-model:visible="shouldShowConsentModal"
     :closable="false"
     :close-on-escape="false"
     modal
     :header="t('consent.title')"
-    :style="{ width: '40rem'}"
-    >
+    :style="{ width: '40rem' }"
+  >
     <div class="bp-form--text-inputs-container">
       <div class="">
         {{ t("consent.intro") }}
