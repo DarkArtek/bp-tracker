@@ -3,6 +3,7 @@ FROM node:${NODE_VERSION}-alpine
 ENV NODE_ENV production
 WORKDIR /usr/src/app
 COPY . .
+USER node
 RUN npm install
 EXPOSE 3000
 RUN npm run build-only
