@@ -5,5 +5,5 @@ COPY package*.json ./
 COPY package-lock.json ./
 RUN npm ci
 COPY . .
-EXPOSE 3000
+EXPOSE 5173
 RUN npm run build-only
