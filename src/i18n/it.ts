@@ -85,7 +85,7 @@ export const it = {
   },
   chart: {
     amountOfDataPoints: "Quanti dati?",
-    chartsTitle: "Diagramma",
+    chartsTitle: "Grafico",
   },
   toasts: {
     errorWhileDeletingMeasurement: "problema durante eliminazione dei dati",
