@@ -7,10 +7,10 @@
   "packageRules": [
     {
       "matchPackageNames": ["/eslint/"],
-      "labels": ["linting"],
-      "npm": {
-        "minimumReleaseAge": "1 week"
-      }
+      "labels": ["linting"]
     }
-  ]
+  ],
+  "npm": {
+    "minimumReleaseAge": "1 week"
+  }
 }
