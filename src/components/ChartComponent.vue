@@ -76,7 +76,7 @@ const setChartData = () => {
           };
         }),
         fill: false,
-        borderColor: documentStyle.getPropertyValue("--p-cyan-500"),
+        borderColor: documentStyle.getPropertyValue("--p-emerald-600"),
         tension: 0.4,
       },
       {
@@ -88,7 +88,7 @@ const setChartData = () => {
           };
         }),
         fill: false,
-        borderColor: documentStyle.getPropertyValue("--p-gray-500"),
+        borderColor: documentStyle.getPropertyValue("--p-green-500"),
         tension: 0.4,
       },
       {
@@ -100,7 +100,7 @@ const setChartData = () => {
           };
         }),
         fill: false,
-        borderColor: documentStyle.getPropertyValue("--p-purple-500"),
+        borderColor: documentStyle.getPropertyValue("--p-rose-600"),
         tension: 0.4,
       },
     ],
