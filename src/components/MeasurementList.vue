@@ -10,7 +10,7 @@ import { useRouter } from "vue-router";
 import dayjs from "dayjs";
 import { useExportFile } from "@/composables/exportFile";
 import { useImportfile } from "@/composables/importFile";
-import { useShare } from "@vueuse/core";
+import { timestamp, useShare } from "@vueuse/core";
 import { useI18n } from "vue-i18n";
 import { useConfirm } from "primevue/useconfirm";
 import ConfirmDialog from "primevue/confirmdialog";
@@ -107,20 +107,23 @@ function shareAsCsv() {
           stripedRows
           :value="measurementsStore.getAllMeasurements"
           selectionMode="single"
+          sort-field="timestamp"
           data-key="id"
           paginator
           :rows="5"
+          :sort-desc="true"
           :rowsPerPageOptions="[5, 10, 20, 50]"
+          :sort-order="-1"
         >
-          <Column field="timestamp" sortable :header="t('measurement.createdAt')">
+          <Column field="timestamp" sortable="true" :header="t('measurement.createdAt')">
             <template #body="slotProps">
               {{ (slotProps.data as Measurement).timestamp.toLocaleString() }}
             </template>
           </Column>
-          <Column field="systolic" sortable :header="t('measurement.systolic')"></Column>
-          <Column field="diastolic" sortable :header="t('measurement.diastolic')"></Column>
-          <Column field="heartRate" sortable :header="t('measurement.heartRate')"></Column>
-          <Column field="whichArm" sortable :header="t('measurement.whichArm')"></Column>
+          <Column field="systolic" sortable="true" :header="t('measurement.systolic')"></Column>
+          <Column field="diastolic" sortable="true" :header="t('measurement.diastolic')"></Column>
+          <Column field="heartRate" sortable="true" :header="t('measurement.heartRate')"></Column>
+          <Column field="whichArm" sortable="true" :header="t('measurement.whichArm')"></Column>
         </DataTable>
       </div>
     </Panel>
